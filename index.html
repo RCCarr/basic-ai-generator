@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Fact Generator</title>
   </head>
   <body>
@@ -12,7 +13,7 @@
       <header><h1>AI Fact Generator</h1></header>
 
       <main>
-        <form>
+        <form id="fact-generator-form">
           <input
             type="text"
             placeholder="Enter the topic you would like a fact about"
@@ -23,7 +24,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="fact">The fact will go here</div>
+        <div class="fact" id="fact"></div>
       </main>
 
       <footer>
